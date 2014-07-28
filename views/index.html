@@ -42,10 +42,11 @@
 			<h1 class="logo"><a href="#home">BoosterBot</a></h1>
 			<i class="fa fa-times menu-close"></i>
 			<a href="#home" class="smoothScroll">Home</a>
-			<a href="#demo" class="smoothScroll">Demo</a>
+<!-- 			<a href="#introduction" class="smoothScroll">Introduction</a> -->
 			<a href="#features" class="smoothScroll">Features</a>
 			<a href="#hardware" class="smoothScroll">Hardware</a>
 			<a href="#software" class="smoothScroll">Software</a>
+			<a href="#demo" class="smoothScroll">Demo</a>
 			<a href="#downloads" class="smoothScroll">Downloads</a>
 			<a href="#documentation" class="smoothScroll">Documentation</a>
 			<a href="#process" class="smoothScroll">Design Process</a>
@@ -69,65 +70,29 @@
 	<div id="headerwrap">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-6 col-md-offset-3 text-center">
 					<h1>BoosterBot</h1>
 					<h2>A Robotics BoosterPack for Your LaunchPad</h2>
+					<a href="" class="thumbnail" id="watchVideoBtn" data-toggle="modal" data-target="#FirmataDemoModal">
+						Watch Video
+					</a>
 				</div>
 			</div><! --/row -->
 		</div><! --/container -->
 	</div><! --/headerwrap -->
 
-	<section id="demo" name="demo"></section>
-	<div id="demowrap">
+<!-- 	<section id="introduction" name="introduction"></section>
+	<div id="introductionwrap">
 		<div class="container">
 			<div class="row mt centered">
-				<h1>Demo</h1>
+				<h1>Introduction</h1>
 				<hr class="section-heading-spacer">
 				<div class="clearfix"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-5">
-					<a href="#" class="thumbnail">
-						<img src="images/line-tracking-demo-thumb.jpg" 
-						alt="Generic placeholder thumbnail" >
-					</a>
-					<div class="caption">
-						<h3>Line Tracking Demo</h3>
-						<p>Some sample text. Some sample text.</p>
-					</div>
-				</div>
-				<div class="col-md-5 col-md-offset-2">
-					<button class="thumbnail" data-toggle="modal" data-target="#FirmataDemoModal">
-						<img src="images/line-tracking-demo-thumb.jpg" 
-						alt="Generic placeholder thumbnail">
-					</button>
-					<div class="caption">
-						<h3>Firmata Remote Control Demo</h3>
-						<p>Some sample text. Some sample text.</p>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div><! --/container -->
-	</div><! --/demowrap -->
-
-	<!-- Firmata Demo Modal -->
-	<div class="modal fade" id="FirmataDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-					<h4 class="modal-title" id="myModalLabel">Remote Control with Firmata</h4>
-				</div>
-				<div class="modal-body">
-					<iframe width="784" height="441" src="//www.youtube.com/embed/RDHdkwH2jVs" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<div id="introvideo"class="col-md-12">
 				</div>
 			</div>
 		</div>
-	</div> <!-- /FirmataDemoModal -->
+	</div>-->
 
 	<section id="features" name="features"></section>
 	<div id="featureswrap">
@@ -136,44 +101,44 @@
 				<h1>Features</h1>
 				<hr class="section-heading-spacer">
 				<div class="clearfix"></div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-coffee"></i>
 					<h3>Standard 40-pin Header </h3>
 					<p>Adhere to the BoosterPack standard. Go plug in your favorite LaunchPad!</p>
 				</div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-cogs"></i>
 					<h3>Dual Power Mode</h3>
 					<p>Choose 3xAAA batteries or plug in your Fuel Tank BoosterPack</p>
 				</div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-heart"></i>
 					<h3>Energia Libraries</h3>
 					<p>Port exisiting Energia/Arduino code directly to your new BoosterPack</p>
 				</div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-heart"></i>
 					<h3>Great for Beginners</h3>
 					<p>The plug-and-play aspect of the LaunchPad and full Energia support makes it easy for beginners</p>
 				</div>
 			</div><! --/row -->
 			<div class="row mt centered">
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-coffee"></i>
 					<h3>Out-of-Box Demo</h3>
 					<p>Download awesome line tracking, maze solving, and remote-control demo</p>
 				</div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-cogs"></i>
 					<h3>Compact & Agile</h3>
 					<p>The small form factor and low center of gravity makes your car drive super fast!</p>
 				</div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-heart"></i>
 					<h3>Connect to Cloud</h3>
 					<p>Using Firmata and Node JS, you can control your BoosterPack from any web browser.</p>
 				</div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-heart"></i>
 					<h3>Open Source</h3>
 					<p>Make your own modification to the awesome BoosterPack</p>
@@ -199,17 +164,17 @@
 				</div>
 				<div class="col-md-6">
 					<div class="row">
-						<div class="col-lg-4 proc">
+						<div class="col-md-4 proc">
 							<i class="fa fa-coffee"></i>
 							<h3>Texas Instruments</h3>
 							<p>Entire BoosterPack made with TI ICs</p>
 						</div>
-						<div class="col-lg-4 proc">
+						<div class="col-md-4 proc">
 							<i class="fa fa-cogs"></i>
 							<h3>Open Source</h3>
 							<p>Hardware is open source</p>
 						</div>
-						<div class="col-lg-4 proc">
+						<div class="col-md-4 proc">
 							<i class="fa fa-heart"></i>
 							<h3>Single PCB Solution</h3>
 							<p>All features are built on top of a single piece of PCB</p>
@@ -265,27 +230,32 @@
 				<h1>Software</h1>
 				<hr class="section-heading-spacer">
 				<div class="clearfix"></div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-coffee"></i>
 					<h3>Energia Library</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 				</div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-cogs"></i>
 					<h3>Simple APIs</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 				</div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-heart"></i>
 					<h3>Firmata</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 				</div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<span class="glyphicon glyphicon-star"></span>
 					<h3>Open Source Software</h3>
 					<p>All demo's source code can be downloaded <a href="#downloads">here</a></p>
 				</div>
 			</div><! --/row -->
+
+			<h2>Firmata</h2>
+			<div>
+				<img src="images/Firmata_Diagram.png" >
+			</div>
 
 		
 
@@ -294,6 +264,68 @@
 		</div><!-- /container -->
 	</div><!-- /softwarewrap -->
 
+	<section id="demo" name="demo"></section>
+	<div id="demowrap">
+		<div class="container">
+			<div class="row mt centered">
+				<h1>Demo</h1>
+				<hr class="section-heading-spacer">
+				<div class="clearfix"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<a class="thumbnail" href="" data-toggle="modal" data-target="#IntroVideoModal">
+						<img src="images/line-tracking-demo-thumb.jpg" 
+						alt="Intro Video">
+					</a>
+					<div class="caption">
+						<h3>Intro Video</h3>
+						<p>Some sample text. Some sample text.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<a href="" class="thumbnail" data-toggle="modal" data-target="#LineTrackingModal">
+						<img src="images/line-tracking-demo-thumb.jpg" 
+						alt="Line Tracking" >
+					</a>
+					<div class="caption">
+						<h3>Line Tracking Demo</h3>
+						<p>Some sample text. Some sample text.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<a href="" class="thumbnail" data-toggle="modal" data-target="#FirmataDemoModal">
+						<img src="images/line-tracking-demo-thumb.jpg" 
+						alt="Firmata RC Control">
+					</a>
+					<div class="caption">
+						<h3>Firmata Remote Control Demo</h3>
+						<p>Some sample text. Some sample text.</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div><! --/container -->
+	</div><! --/demowrap -->
+
+	<!-- Firmata Demo Modal -->
+	<div class="modal fade" id="FirmataDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="myModalLabel">Remote Control with Firmata</h4>
+				</div>
+				<div class="modal-body">
+					<div id="introvideo"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /FirmataDemoModal -->
+
 	<section id="downloads" name="downloads"></section>
 	<div id="downloadswrap">
 		<div class="container">
@@ -301,22 +333,22 @@
 				<h1>Downloads</h1>
 				<hr class="section-heading-spacer">
 				<div class="clearfix"></div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-coffee"></i>
 					<h3>Hardware Gerber Files</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 				</div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-cogs"></i>
 					<h3>Motor Library</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 				</div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<i class="fa fa-heart"></i>
 					<h3>Line Tracking</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 				</div>
-				<div class="col-lg-3 proc">
+				<div class="col-md-3 proc">
 					<span class="glyphicon glyphicon-star"></span>
 					<h3>Remote Control with Firmata</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
@@ -337,15 +369,15 @@
 				<h1>Documentation</h1>
 				<hr class="section-heading-spacer">
 				<div class="clearfix"></div>
-				<div class="col-lg-4 proc">
+				<div class="col-md-4 proc">
 					<h3>Getting Started</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 				</div>
-				<div class="col-lg-4 proc">
+				<div class="col-md-4 proc">
 					<h3>Hardware Setup</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 				</div>
-				<div class="col-lg-4 proc">
+				<div class="col-md-4 proc">
 					<h3>Software Setup</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 				</div>
@@ -384,21 +416,21 @@
 				<h1>Meet the Team</h1>
 				<hr class="section-heading-spacer">
 				<div class="clearfix"></div>
-				<div class="col-lg-4 name">
+				<div class="col-md-4 name">
 					<img class="img-responsive" src="images/pic.png">
 					<p>EDWARD SHIN</p>
 					<div class="name-label">Hardware Engineer</div>
-				</div><! --/col-lg-4-->
-				<div class="col-lg-4 name">
+				</div><! --/col-md-4-->
+				<div class="col-md-4 name">
 					<img class="img-responsive" src="images/pic.png">
 					<p>SHENG ZHAO</p>
 					<div class="name-label">Software Engineer<br>Web Designer</div>
-				</div><! --/col-lg-4-->
-				<div class="col-lg-4 name">
+				</div><! --/col-md-4-->
+				<div class="col-md-4 name">
 					<img class="img-responsive" src="images/pic.png">
 					<p>JEFF PETTYJOHN</p>
 					<div class="name-label">Application Engineer</div>
-				</div><! --/col-lg-4-->
+				</div><! --/col-md-4-->
 					
 				
 			</div><! --/row -->
@@ -700,7 +732,8 @@
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/smoothscroll.js"></script>
 	<script src="javascripts/jquery.stellar.min.js"></script>
-	<script src="javascripts/fancybox/jquery.fancybox.js"></script>    
+	<script src="javascripts/fancybox/jquery.fancybox.js"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
 	<script src="javascripts/main.js"></script>
 		<script>
 		$(function(){
