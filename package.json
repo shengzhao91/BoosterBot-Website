@@ -1,6 +1,6 @@
 {
   "name": "BoosterBotWebsite",
-  "version": "0.0.1-5",
+  "version": "0.0.1-7",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -14,6 +14,10 @@
     "debug": "~0.7.4",
     "jade": "~1.3.0"
   },
+  "domains": [
+    "boosterbot.in",
+    "www.boosterbot.in"
+  ],
   "subdomain": "BoosterBot",
   "engines": {
     "node": "0.10.x"

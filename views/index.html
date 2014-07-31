@@ -42,24 +42,19 @@
 			<h1 class="logo"><a href="#home">BoosterBot</a></h1>
 			<i class="fa fa-times menu-close"></i>
 			<a href="#home" class="smoothScroll">Home</a>
-<!-- 			<a href="#introduction" class="smoothScroll">Introduction</a> -->
 			<a href="#features" class="smoothScroll">Features</a>
+			<a href="#demo" class="smoothScroll">Demo</a>
 			<a href="#hardware" class="smoothScroll">Hardware</a>
 			<a href="#software" class="smoothScroll">Software</a>
-			<a href="#demo" class="smoothScroll">Demo</a>
-			<a href="#downloads" class="smoothScroll">Downloads</a>
 			<a href="#documentation" class="smoothScroll">Documentation</a>
 			<a href="#process" class="smoothScroll">Design Process</a>
 			<a href="#team" class="smoothScroll">The Team</a>
 			<a href="#contact" class="smoothScroll">Contact</a>
-			
-			<a href="#about" class="smoothScroll">About</a>
-			<a href="#portfolio" class="smoothScroll">Portfolio</a>
-			<a href="#services" class="smoothScroll">Services</a>
+
 			<a href="#"><i class="fa fa-facebook"></i></a>
 			<a href="#"><i class="fa fa-twitter"></i></a>
-			<a href="#"><i class="fa fa-dribbble"></i></a>
-			<a href="#"><i class="fa fa-envelope"></i></a>
+			<a href="https://github.com/shengzhao91"><i class="fa fa-dribbble"></i></a>
+			<a href="mailto:shengzhao91@gmail.com?Subject=BoosterBot%20BoosterPack"><i class="fa fa-envelope"></i></a>
 		</div>
 		
 		<!-- Menu button -->
@@ -73,11 +68,18 @@
 				<div class="col-md-6 col-md-offset-3 text-center">
 					<h1>BoosterBot</h1>
 					<h2>A Robotics BoosterPack for Your LaunchPad</h2>
+				</div>
+			</div><! --/row -->
+			<div class="row">
+				<div class="col-md-3 col-md-offset-3">
 					<a href="" class="thumbnail" id="watchVideoBtn" data-toggle="modal" data-target="#FirmataDemoModal">
 						Watch Video
 					</a>
 				</div>
-			</div><! --/row -->
+				<div class="col-md-3">
+					<a href="https://github.com/Hylian/BoosterBot" class="thumbnail" id="viewGitHubBtn">View GitHub</a>
+				</div>
+			</div>
 		</div><! --/container -->
 	</div><! --/headerwrap -->
 
@@ -150,6 +152,68 @@
 		</div><!-- /container -->
 	</div><!-- /featureswrap -->
 
+	<section id="demo" name="demo"></section>
+	<div id="demowrap">
+		<div class="container">
+			<div class="row mt centered">
+				<h1>Demo</h1>
+				<hr class="section-heading-spacer">
+				<div class="clearfix"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<a class="thumbnail" href="" data-toggle="modal" data-target="#IntroVideoModal">
+						<img src="images/line-tracking-demo-thumb.jpg" 
+						alt="Intro Video">
+					</a>
+					<div class="caption">
+						<h3>Intro Video</h3>
+						<p>Some sample text. Some sample text.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<a href="" class="thumbnail" data-toggle="modal" data-target="#LineTrackingModal">
+						<img src="images/line-tracking-demo-thumb.jpg" 
+						alt="Line Tracking" >
+					</a>
+					<div class="caption">
+						<h3>Line Tracking Demo</h3>
+						<p>Some sample text. Some sample text.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<a href="" class="thumbnail" data-toggle="modal" data-target="#FirmataDemoModal">
+						<img src="images/line-tracking-demo-thumb.jpg" 
+						alt="Firmata RC Control">
+					</a>
+					<div class="caption">
+						<h3>Firmata Remote Control Demo</h3>
+						<p>Some sample text. Some sample text.</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div><! --/container -->
+	</div><! --/demowrap -->
+
+	<!-- Firmata Demo Modal -->
+	<div class="modal fade" id="FirmataDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="myModalLabel">Remote Control with Firmata</h4>
+				</div>
+				<div class="modal-body">
+					<div id="introvideo"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /FirmataDemoModal -->
+
 	<section id="hardware" name="hardware"></section>
 	<div id="hardwarewrap">
 		<div class="container">
@@ -158,29 +222,28 @@
 				<hr class="section-heading-spacer">
 				<div class="clearfix"></div>
 			</div>
+			<div class="row mt centered">
+				<div class="col-md-4 proc">
+					<i class="fa fa-coffee"></i>
+					<h3>Texas Instruments</h3>
+					<p>Entire BoosterPack made with TI ICs</p>
+				</div>
+				<div class="col-md-4 proc">
+					<i class="fa fa-cogs"></i>
+					<h3>Open Source</h3>
+					<p>Hardware is open source</p>
+				</div>
+				<div class="col-md-4 proc">
+					<i class="fa fa-heart"></i>
+					<h3>Single PCB Solution</h3>
+					<p>All features are built on top of a single piece of PCB</p>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-6">
 					<img class="img-responsive" src="images/boosterbot-bottom.jpg" alt="">
 				</div>
 				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-4 proc">
-							<i class="fa fa-coffee"></i>
-							<h3>Texas Instruments</h3>
-							<p>Entire BoosterPack made with TI ICs</p>
-						</div>
-						<div class="col-md-4 proc">
-							<i class="fa fa-cogs"></i>
-							<h3>Open Source</h3>
-							<p>Hardware is open source</p>
-						</div>
-						<div class="col-md-4 proc">
-							<i class="fa fa-heart"></i>
-							<h3>Single PCB Solution</h3>
-							<p>All features are built on top of a single piece of PCB</p>
-						</div>
-					</div>
-
 					<div class="panel panel-primary">
 						<div class="panel-heading">Dual H-Bridge Motor Driver - DRV8833</div>
 						<div class="panel-body">
@@ -271,69 +334,7 @@
 		</div><!-- /container -->
 	</div><!-- /softwarewrap -->
 
-	<section id="demo" name="demo"></section>
-	<div id="demowrap">
-		<div class="container">
-			<div class="row mt centered">
-				<h1>Demo</h1>
-				<hr class="section-heading-spacer">
-				<div class="clearfix"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<a class="thumbnail" href="" data-toggle="modal" data-target="#IntroVideoModal">
-						<img src="images/line-tracking-demo-thumb.jpg" 
-						alt="Intro Video">
-					</a>
-					<div class="caption">
-						<h3>Intro Video</h3>
-						<p>Some sample text. Some sample text.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<a href="" class="thumbnail" data-toggle="modal" data-target="#LineTrackingModal">
-						<img src="images/line-tracking-demo-thumb.jpg" 
-						alt="Line Tracking" >
-					</a>
-					<div class="caption">
-						<h3>Line Tracking Demo</h3>
-						<p>Some sample text. Some sample text.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<a href="" class="thumbnail" data-toggle="modal" data-target="#FirmataDemoModal">
-						<img src="images/line-tracking-demo-thumb.jpg" 
-						alt="Firmata RC Control">
-					</a>
-					<div class="caption">
-						<h3>Firmata Remote Control Demo</h3>
-						<p>Some sample text. Some sample text.</p>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div><! --/container -->
-	</div><! --/demowrap -->
-
-	<!-- Firmata Demo Modal -->
-	<div class="modal fade" id="FirmataDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-					<h4 class="modal-title" id="myModalLabel">Remote Control with Firmata</h4>
-				</div>
-				<div class="modal-body">
-					<div id="introvideo"></div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div> <!-- /FirmataDemoModal -->
-
-	<section id="downloads" name="downloads"></section>
+<!-- 	<section id="downloads" name="downloads"></section>
 	<div id="downloadswrap">
 		<div class="container">
 			<div class="row mt centered">
@@ -360,14 +361,9 @@
 					<h3>Remote Control with Firmata</h3>
 					<p>Try controlling BoosterBot wirelessly by downloading this demo <a href="">here</a></p>
 				</div>
-			</div><! --/row -->
-
-		
-
-		</div><! --/container -->
-
-		</div><!-- /container -->
-	</div><!-- /downloadswrap -->
+			</div>
+		</div>
+	</div><! /downloadswrap -->
 
 	<section id="documentation" name="documentation"></section>
 	<div id="documentationwrap">
@@ -390,11 +386,29 @@
 				</div>
 			</div><! --/row -->
 
-		
-
+			<div class="row mt centered">
+				<div class="col-md-3 proc">
+					<i class="fa fa-coffee"></i>
+					<h3>Hardware Gerber Files</h3>
+					<p>Check out the <a href="">Gerber files</a> that were used to manufacture the BoosterBot PCB!</p>
+				</div>
+				<div class="col-md-3 proc">
+					<i class="fa fa-cogs"></i>
+					<h3>Motor Library</h3>
+					<p>A great library to include for controlling the motors.</p>
+				</div>
+				<div class="col-md-3 proc">
+					<i class="fa fa-heart"></i>
+					<h3>Line Tracking</h3>
+					<p>Get your BoosterBot and LaunchPad to follow a black line by downloading the line tracking demo <a href="">here</a>!</p>
+				</div>
+				<div class="col-md-3 proc">
+					<span class="glyphicon glyphicon-star"></span>
+					<h3>Remote Control with Firmata</h3>
+					<p>Try controlling BoosterBot wirelessly by downloading this demo <a href="">here</a></p>
+				</div>
+			</div>
 		</div><! --/container -->
-
-		</div><!-- /container -->
 	</div><!-- /documentationwrap -->
 
 	<section id="process" name="process"></section>
@@ -424,17 +438,17 @@
 				<hr class="section-heading-spacer">
 				<div class="clearfix"></div>
 				<div class="col-md-4 name">
-					<img class="img-responsive" src="images/pic.png">
+					<img class="img-responsive" src="images/pic-edward.png">
 					<p>EDWARD SHIN</p>
 					<div class="name-label">Hardware Engineer</div>
 				</div><! --/col-md-4-->
 				<div class="col-md-4 name">
-					<img class="img-responsive" src="images/pic.png">
+					<img class="img-responsive" src="images/pic-sheng.png">
 					<p>SHENG ZHAO</p>
 					<div class="name-label">Software Engineer<br>Web Designer</div>
 				</div><! --/col-md-4-->
 				<div class="col-md-4 name">
-					<img class="img-responsive" src="images/pic.png">
+					<img class="img-responsive" src="images/pic-jeff.png">
 					<p>JEFF PETTYJOHN</p>
 					<div class="name-label">Application Engineer</div>
 				</div><! --/col-md-4-->
@@ -448,46 +462,6 @@
 
 		</div><!-- /container -->
 	</div><!-- /teamwrap -->
-
-	<div id="testimonials">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 mt">
-				
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner">
-					    <div class="item active mb centered">
-					      <h3>MARK WEBBER</h3>
-					      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-					      <p><img class="img-circle" src="images/pic-t1.jpg" width="80"></p>
-					    </div>
-
-					    <div class="item mb centered">
-					      <h3>PAUL LEVINGSTON</h3>
-					      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-					      <p><img class="img-circle" src="images/pic-t2.jpg" width="80"></p>
-					    </div>
-
-					    <div class="item mb centered">
-					      <h3>LUCY LENNIN</h3>
-					      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-					      <p><img class="img-circle" src="images/pic-t3.jpg" width="80"></p>
-					    </div>
-
-					  </div>
-					  <!-- Indicators -->
-					  <ol class="carousel-indicators">
-					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					  </ol>
-					</div>
-					  
-				</div><! --/col-lg-8 -->
-			</div><! --/row -->
-		</div><! --/container -->
-	</div><! --/testimonials -->
 
 	<section id="contact" name="contact"></section>
 	<! -- CONTACT SEPARATOR -->
