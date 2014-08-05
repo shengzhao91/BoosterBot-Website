@@ -13,7 +13,7 @@ $( document ).ready(function() {
 		window.introvideoplayer.playVideo();
 	});
 
-	$('#FirmataDemoModal').on('hidden.bs.modal', function () {
+	$('#IntroVideoModal').on('hidden.bs.modal', function () {
 	    // do something…
 	    introvideoplayer.stopVideo();
 	})
@@ -23,9 +23,9 @@ var introvideoplayer;
 function onYouTubeIframeAPIReady() {
 	console.log( "iFrame ready!" );
 	introvideoplayer = new YT.Player('introvideo', {
-		height: '390',
-		width: '640',
-		videoId: 'RDHdkwH2jVs',
+		height: '487',
+		width: '800',
+		videoId: 'I0JuGvbfIIE',
 		playerVars: { 
 			'autoplay': 0, // auto start
 			'autohide': 1, // auto hide control after play

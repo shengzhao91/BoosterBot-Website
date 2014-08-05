@@ -291,11 +291,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #watchVideoBtn {
-	background-color: #ff6347; /* tomato red */
+	background-color: #FF4726; 
 }
 
 #viewGitHubBtn {
-	background-color: yellowgreen; /* yellow green */
+	background-color: #5AC227; /* yellow green */
 }
 
 /* About Wrap & Conf */
@@ -360,13 +360,21 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 80px;
 }
 
+#demowrap img {
+	height: 197px;
+}
+
 /* Features Wrap Section */
 #featureswrap {
-	background: darkturquoise;
+	background: #ADF0F7;
 	padding-bottom: 80px;
 }
 
 #featureswrap i {
+	font-size: 50px;
+}
+
+#featureswrap .glyphicon {
 	font-size: 50px;
 }
 
@@ -376,8 +384,21 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 80px;
 }
 
-#hardwarewrap i {
+#hardwarewrap .glyphicon {
 	font-size: 50px;
+}
+
+#hardwarewrap .panel-heading{
+	background-color: black;
+	border-color: black;
+	color: white;
+	text-align: center;
+}
+
+#hardwarewrap .panel-body>img {
+	height: 150px;
+	display: block;
+	margin: auto;
 }
 
 /* Software Wrap Section */
@@ -387,7 +408,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #softwarewrap img {
-	width: 100%;
+	margin-top: 50px;
+}
+
+#softwarewrap .glyphicon{
+	font-size: 50px
+}
+
+#softwarewrap .section-heading {
+	font-weight: 300;
+	margin-bottom: 30px;
 }
 
 /* Team Section */
@@ -476,28 +506,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Contact Wrap */
-#contactwrap {
+#footerwrap {
 	background-color: #2f2f2f;
 	margin-top: 0px;
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
 
-#contactwrap p {
+#footerwrap p {
 	color: #f2f2f2;
+	font-size: 16px;
 }
-
-#contactwrap small {
-	font-size: 13px;
-}
-
-.contact {
+.footer {
 	background-image: url(../images/contact-sep.jpg);
-}
-
-#contactwrap label {
-	color: #f2f2f2;
-	margin-top: 10px;
 }
 
 
