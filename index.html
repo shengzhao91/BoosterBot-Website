@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="BoosterBot website">
+    <meta name="keywords" content="LaunchPad, TI, Robotics">
+    <meta name="author" content="Sheng Zhao">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BoosterBot BoosterPack</title>
+
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+  <!-- Menu -->
+  <nav class="menu" id="theMenu">
+    <div class="menu-wrap">
+      <h1 class="logo"><a href="#home">BoosterBot</a></h1>
+      <i class="fa fa-times menu-close"></i>
+      <a href="#home" class="smoothScroll">Home</a>
+      <a href="#features" class="smoothScroll">Features</a>
+      <a href="#hardware" class="smoothScroll">Hardware</a>
+      <a href="#software" class="smoothScroll">Software</a>
+      <a href="#demo" class="smoothScroll">Demo</a>
+      <a href="#documentation" class="smoothScroll">Documentation</a>
+      <a href="#team" class="smoothScroll">The Team</a>
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/shengzhao91"><i class="fa fa-dribbble"></i></a>
+      <a href="mailto:shengzhao91@gmail.com?Subject=BoosterBot%20BoosterPack"><i class="fa fa-envelope"></i></a>
+    </div>
+    
+    <!-- Menu button -->
+    <div id="menuToggle"><i class="fa fa-bars"></i></div>
+  </nav>
+
+  <section id="home" name="home"></section>
+  <div id="headerwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <h1>BoosterBot</h1>
+          <h2>A Robotics BoosterPack for Your LaunchPad</h2>
+        </div>
+      </div><!--/row -->
+      <div class="row">
+        <div class="col-md-3 col-md-offset-3">
+          <a href="" class="thumbnail" id="watchVideoBtn" data-toggle="modal" data-target="#IntroVideoModal">
+            Watch Video
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://github.com/shengzhao91/BoosterBot" class="thumbnail" id="viewGitHubBtn">View GitHub</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="text-center">
+          <a id="scrollDownBtn" href="#features" class="btn btn-circle smoothScroll">
+                    <i class="fa fa-angle-double-down smoothScroll"></i>
+          </a>
+        </div>
+      </div>
+      
+    </div><!--/container -->
+  </div><!--/headerwrap -->
+
+    <section id="features" name="features"></section>
+  <div id="featureswrap">
+    <div class="container">
+      <div class="row mt centered">
+        <h1>Features</h1>
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <div class="col-md-3 proc">
+          <span class="glyphicon glyphicon-header"></span>
+          <h3>Standard 40-pin Header </h3>
+          <p>Adhere to the BoosterPack standard. Go plug in your favorite LaunchPad!</p>
+        </div>
+        <div class="col-md-3 proc">
+          <i class="fa fa-cogs"></i>
+          <h3>Dual Power Mode</h3>
+          <p>Choose 3xAAA batteries or plug in your Fuel Tank BoosterPack</p>
+        </div>
+        <div class="col-md-3 proc">
+          <span class="glyphicon glyphicon-book"></span>
+          <h3>Energia Libraries</h3>
+          <p>Port exisiting Energia/Arduino code directly to your new BoosterPack</p>
+        </div>
+        <div class="col-md-3 proc">
+          <i class="fa fa-heart"></i>
+          <h3>Great for Beginners</h3>
+          <p>The plug-and-play aspect of the LaunchPad and full Energia support makes it easy for beginners</p>
+        </div>
+      </div><!--/row -->
+      <div class="row mt centered">
+        <div class="col-md-3 proc">
+          <span class="glyphicon glyphicon-briefcase"></span>
+          <h3>Out-of-Box Demo</h3>
+          <p>Download awesome line tracking, maze solving, and remote-control demo</p>
+        </div>
+        <div class="col-md-3 proc">
+          <span class="glyphicon glyphicon-flash"></span>
+          <h3>Compact & Agile</h3>
+          <p>The small form factor and low center of gravity makes your car drive super fast!</p>
+        </div>
+        <div class="col-md-3 proc">
+          <span class="glyphicon glyphicon-cloud"></span>
+          <h3>Connect to Cloud</h3>
+          <p>Using Firmata and Node JS, you can control your BoosterPack from any web browser.</p>
+        </div>
+        <div class="col-md-3 proc">
+          <span class="glyphicon glyphicon-leaf"></span>
+          <h3>Open Source</h3>
+          <p>Make your own modification to the awesome BoosterPack</p>
+        </div>
+      </div><!--/row -->
+
+    </div><!--/container -->
+
+    </div><!-- /container -->
+  </div><!-- /featureswrap -->
+
+  <section id="hardware" name="hardware"></section>
+  <div id="hardwarewrap">
+    <div class="container">
+      <div class="mt centered">
+        <h1>Hardware</h1>
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">Dual H-Bridge Motor Driver - DRV8833</div>
+            <div class="panel-body">
+              <img src="images/part-DRV8833.jpg"><br>
+              The device has two H-bridge drivers controlled by PWM, and can drive two DC brush motors. Power supply voltage range: 2.7 V - 10.8 V 
+              <a href="http://www.ti.com/lit/ds/symlink/drv8833.pdf">Datasheet</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">Step-Up Voltage Regulator - LMR61428</div>
+            <div class="panel-body">
+              <img src="images/part-LMR61428.jpg"><br>
+              A step-up DC-DC switching regulator for battery-powered and low input voltage systems with up to 90% efficiency. Regulated output voltage range: 1.24 V - 14 V.
+              <a href="http://www.ti.com/lit/ds/symlink/lmr61428.pdf">Datasheet</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">Low Dropout Voltage Regulator - TPS770xx</div>
+            <div class="panel-body">
+              <img src="images/part-TPS77033.jpg"><br>
+              The TPS770xx family offers low dropout voltage, ultralow-power operation, and miniaturized packaging. TPS77050 outputs 5.0 V. TPS77033 outputs 3.3 V.
+              <a href="http://www.ti.com/lit/ds/symlink/tps77033.pdf">Datasheet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">30:1 Micro Metal Gearmotor</div>
+            <div class="panel-body">
+              <img src="images/part-pololu-motor.jpg"><br>
+              Two 30:1 micro metal Pololu gearmotors creates a differential drive system to spin the wheels. Each motor is capable of being boosted to 9V for maximum speed. 
+              <a href="http://www.pololu.com/product/993">Datasheet</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">Five Reflectance Sensors - QRE1113</div>
+            <div class="panel-body">
+              <img src="images/part-QRE1113.jpg"><br>
+              By deciphering white from black surfaces, the minature reflective object sensor enables cool line tracking and maze solving capabilities. 
+              <a href="https://www.sparkfun.com/datasheets/Components/SMD/QRE1113.GR.pdf">Datasheet</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">Analog Distance Sensor - GP2Y0A21</div>
+            <div class="panel-body">
+              <img src="images/part-GP2Y0A21.jpg"><br>
+              The Sharp distance sensor detects objects 10 to 80 cm away by outputting an analog voltage ranging from 3.1 to 0.4V to an analog pin. 
+              <a href="https://www.sparkfun.com/datasheets/Components/GP2Y0A21YK.pdf">Datasheet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-md-offset-1">
+          <div class="row mt centered">
+            <div class="col-md-6 col-md-offset-3 proc">
+              <img src="images/glyphicon-ti.png" height="50px" width="50px">
+              <h3>Texas Instruments ICs</h3>
+            </div>
+            <div class="col-md-6 col-md-offset-3 proc">
+              <img src="images/glyphicon-osh.png" height="50px" width="50px">
+              <h3>Open Source Hardware</h3>
+            </div>
+            <div class="col-md-6 col-md-offset-3 proc">
+              <span class="glyphicon glyphicon-stop"></span>
+              <h3>Single PCB Solution</h3>
+            </div>
+            <div class="col-md-6 col-md-offset-3 proc">
+              <span class="glyphicon glyphicon-save"></span>
+              <h3><a href="https://github.com/shengzhao91/BoosterBot/tree/master/PCB">Hardware Gerber Files</a></h3>
+              
+            </div>
+          </div> 
+        </div>
+        <div class="col-md-6">
+          <img class="img-responsive" src="images/boosterbot-bottom.jpg" alt="">
+        </div>
+      </div>
+    </div><!--/container -->
+  </div><!-- /hardwarewrap -->
+
+  <section id="software" name="software"></section>
+  <div id="softwarewrap">
+    <div class="container">
+      <div class="row mt centered">
+        <h1>Software</h1>
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <div class="col-md-3 proc">
+          <span class="glyphicon glyphicon-book"></span>
+          <h3>Energia Library</h3>
+          <p>Libraries are provided in Energia to get your project off and rolling.</p>
+        </div>
+        <div class="col-md-3 proc">
+          <span class="glyphicon glyphicon-file"></span>
+          <h3>Simple APIs</h3>
+          <p>Designed for beginners, the APIs are intuitive and easy to use!</p>
+        </div>
+        <div class="col-md-3 proc">
+          <span class="glyphicon glyphicon-briefcase"></span>
+          <h3>Firmata</h3>
+          <p>A serial protocol that lets you control your BoosterPack from your PC</p>
+        </div>
+        <div class="col-md-3 proc">
+          <span class="glyphicon glyphicon-star"></span>
+          <h3>Open Source Software</h3>
+          <p>All demo's source code can be downloaded on <a href="https://github.com/shengzhao91/BoosterBot/tree/master/Code">GitHub</a></p>
+        </div>
+      </div><!--/row -->
+
+      <div id="container-energia" class="row">
+        <div class="col-md-5">
+          <img src="images/software-energia.jpg" class="img-responsive">
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+          <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Energia Library</h2>
+                    <p class="lead">Easy to use APIs and simple code development environment makes Energia an attractive option for rapid prototyping. </p>
+                    <p class="lead">With a few simple lines, you can control the BoosterBot thanks to our Energia library.</p>
+        </div>
+      </div>
+
+      <div id="container-firmata">
+        <div class="row">
+          <div class="col-md-5">
+            <hr class="section-heading-spacer">
+                      <div class="clearfix"></div>
+                      <h2 class="section-heading">Firmata</h2>
+                      <p class="lead">For a beginner, embedded programming may be daunting. That is why we offer an alternative solution called Firmata, written in Javascript.</p>
+                      <p class="lead">Firmata is a communication protocol that allows your computer to control your LaunchPad, without ever needing to flash the device.</p>
+          </div>
+          <div class="col-md-6 col-md-offset-1">
+            <img src="images/Firmata_Diagram.png" class="img-responsive">
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="images/software-firmata-pin.jpg" class="img-responsive">
+          </div>
+          <div class="col-md-6 col-md-offset-1">
+            <hr class="section-heading-spacer">
+                      <div class="clearfix"></div>
+                      <h2 class="section-heading">Dynamic Pin Map</h2>
+            <p class="lead">For MSP430F5529, pin 23-27 are the analog inputs connected the reflectance sensor. Pin 37-40 are PWMs controlling the motors. Pin 28 is the IR distance sensor.</p>
+            <p class="lead">Depending on the LaunchPad, pins will be dynamically populated on the screen.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <hr class="section-heading-spacer">
+                      <div class="clearfix"></div>
+                      <h2 class="section-heading">Node JS Server</h2>
+                      <p class="lead">With all the raw data, you can let your server handle all the intense data processing. </p>
+                      <p class="lead">Web developers can control motors and access sensor data from the comfort of a Javascript environment.</p>
+          </div>
+          <div class="col-md-6 col-md-offset-1">
+            <img src="images/software-firmata-gui.jpg" class="img-responsive">
+          </div>
+        </div>
+      </div>
+      
+
+      
+
+      <div class="row mt centered">
+        <h2>Software Libraries</h2>
+        <div class="col-md-4 proc">
+          <span class="glyphicon glyphicon-cog"></span>
+          <h3>Motor Library</h3>
+          <p>Simplify motor control. Include Forward/Reverse, Turning, and Hard Breaking.<br>
+            View source on <a href="https://github.com/shengzhao91/BoosterBot/tree/master/Code/Library/Motor">GitHub</a></p>
+        </div>
+        <div class="col-md-4 proc">
+          <span class="glyphicon glyphicon-leaf"></span>
+          <h3>Sensor</h3>
+          <p>Calibrate and read sensors with ease. Include five reflectance sensor and IR distance sensor.<br>
+            View source on <a href="https://github.com/shengzhao91/BoosterBot">GitHub</a></p>
+        </div>
+        <div class="col-md-4 proc">
+          <span class="glyphicon glyphicon-star"></span>
+          <h3>Firmata</h3>
+          <p>Implement Firmata on both the server and browser. Include message passing protocol and sample GUIs.<br>
+            View source on <a href="https://github.com/shengzhao91/BoosterBotGUI">GitHub</a></p>
+        </div>
+      </div>
+
+    </div><!--/container -->
+  </div><!-- /softwarewrap -->
+
+  <section id="demo" name="demo"></section>
+  <div id="demowrap">
+    <div class="container">
+      <div class="row mt centered">
+        <h1>Demo Video</h1>
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Intro Video</h3>
+          <a class="thumbnail" href="" data-toggle="modal" data-target="#IntroVideoModal">
+            <img src="images/video-thumb-intro.png" 
+            alt="Intro Video">
+          </a>
+          <div class="caption">
+            <p>The introduction to BoosterBot gives an overview to its features and demonstrates its robotics capabilities.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3>Line Tracking</h3>
+          <a href="" class="thumbnail" data-toggle="modal" data-target="#LineTrackingModal">
+            <img src="images/under-construction.png" 
+            alt="Line Tracking" >
+          </a>
+          <div class="caption">
+            <p>Under Construction</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3>Firmata Remote Control</h3>
+          <a href="" class="thumbnail" data-toggle="modal" data-target="#FirmataDemoModal">
+            <img src="images/under-construction.png" 
+            alt="Firmata RC Control">
+          </a>
+          <div class="caption">
+            <p>Under Construction</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div><!--/container -->
+  </div><!--/demowrap -->
+
+  <!-- Firmata Demo Modal -->
+  <div class="modal fade" id="IntroVideoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Introduction Video</h4>
+        </div>
+        <div class="modal-body">
+          <div id="introvideo"></div>
+        </div>
+        <div class="modal-footer">
+          <div class="pull-left">If video doesn't load, check it out <a href="https://youtu.be/rwIMUJ7QLfw">here on YouTube</a> </div>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /FirmataDemoModal -->
+
+  <section id="documentation" name="documentation"></section>
+  <div id="documentationwrap">
+    <div class="container">
+      <div class="row mt centered">
+        <h1>Documentation</h1>
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <div class="col-md-4 proc">
+          <h3>Getting Started</h3>
+          <p> The BoosterBot team recommends getting started by downloading the Motor Library and the demos from the <a href="https://github.com/shengzhao91/BoosterBot">GitHub</a> page. Attach your BoosterBot under your favorite 40-pin LaunchPad then download an Energia demo to your board.</p>
+        </div>
+        <div class="col-md-4 proc">
+          <h3>Hardware Setup</h3>
+          <p>Setting up the hardware could not be easier! Take BoosterBot out of the box and attach it under a 40-pin LaunchPad. Power the boards by using your FuelTank BoosterPack or the 3xAAA battery pack.</p>
+        </div>
+        <div class="col-md-4 proc">
+          <h3>Software Setup</h3>
+          <p>Download <a href="https://energia.nu/">Energia</a>, plug in a USB cable into your computer, download the demos and Energia libraries <a href="https://github.com/shengzhao91/BoosterBot/tree/master/Code">here</a>, and download a demo application to the LaunchPad.</p>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /documentationwrap -->
+
+  <section id="team" name="team"></section>
+  <div id="teamwrap">
+    <div class="container">
+      <div class="row mt centered">
+        <h1>Meet the Team</h1>
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <div class="col-md-4 name">
+          <img class="img-responsive" src="images/pic-edward.png">
+          <p>EDWARD SHIN</p>
+          <div class="name-label">Hardware Engineer</div>
+        </div><!--/col-md-4-->
+        <div class="col-md-4 name">
+          <img class="img-responsive" src="images/pic-sheng.png">
+          <p>SHENG ZHAO</p>
+          <div class="name-label">Software Engineer<br>Webmaster</div>
+        </div><!--/col-md-4-->
+        <div class="col-md-4 name">
+          <img class="img-responsive" src="images/pic-jeff.png">
+          <p>JEFF PETTYJOHN</p>
+          <div class="name-label">Application Engineer</div>
+        </div><!--/col-md-4-->
+      </div><!--/row -->
+    </div><!--/container -->
+  </div><!-- /teamwrap -->
+
+  <!-- FOOTER SEPARATOR -->
+ 
+  <div id="footerwrap">
+    <div class="container" >
+      <p align="center">Copyright © BoosterBot 2014 - 2023.</p>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="javascripts/main.js"></script>
+
+
+  </body>
+</html>

@@ -3,4 +3,4 @@ BoosterBot-Website
 
 Landing Page for BoosterBot BoosterPack
 
-boosterbot.nodejitsu.com
+https://boosterbot.onrender.com
